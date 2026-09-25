@@ -232,19 +232,6 @@ onUnmounted(() => {
     -webkit-text-stroke: 3px #000000; /* Matches the stroke width to prevent clipping */
 }
 
-/* 🖤 THE TRICK: The pseudo-element acts as a solid background shadow layer */
-.retro-90s-text::after {
-  content: "SYNTHSNIZER"; /* Pulls text dynamically from HTML */
-  position: absolute;
-  left: 124px;  /* Control horizontal shadow distance */
-  top: 18px;   /* Control vertical shadow distance */
-  z-index: -1; /* Pushes it strictly behind the gradient text */
-  
-  /* Create the chunky shadow appearance */
-  -webkit-text-fill-color: #967ce3;
-     -webkit-text-stroke: 3px #bfb0da;
-}
-
 .title-container h2, .title-container p {
   font-family:  'Early Quake', sans-serif;
 }
